@@ -865,6 +865,24 @@
     flex-wrap: wrap; gap: 12px;
   }
 
+  /* Prototype banner */
+  .proto-banner {
+    background: var(--ink);
+    color: var(--bg);
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 8px var(--pad-x);
+    border-bottom: 1px solid color-mix(in oklab, var(--bg) 14%, transparent);
+  }
+  .proto-banner strong {
+    color: oklch(0.78 0.12 50);
+    font-weight: 600;
+    margin-right: 8px;
+  }
+
   /* Sticky mobile call bar */
   .call-bar {
     display: none;
@@ -914,6 +932,7 @@
 </style>
 </head>
 <body>
+  <div class="proto-banner" role="status"><strong>Prototype</strong>This is a work-in-progress preview — not the live TimRock Automotive site.</div>
   <div id="root"></div>
 
   <script>
